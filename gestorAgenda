@@ -2,6 +2,7 @@ echo "1. Mostrar nombres"
 echo "2. Mostrar telefonos"
 echo "3. Mostrar edades"
 echo "4. Mostrar población"
+echo "5. Mostrar la primera linea"
 echo Elige una opcion
 read opc
 
@@ -10,5 +11,6 @@ case $opc in
 	2) cut -f2 -d":" /home/asir/agenda ;;
 	3) cut -f3 -d":" /home/asir/agenda ;;
 	4) cut -f4 -d":" /home/asir/agenda ;;
+	5) head -1 /home/asir/agenda ;;
 	*) echo MALA OPSIÓN AMIGÜITO
 esac
